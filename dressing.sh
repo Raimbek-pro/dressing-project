@@ -29,7 +29,7 @@ sudo chmod 550 db api nginx frontend docker-compose.yml
 
 
 echo "admin ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/admin > /dev/null
-chmod 0440 /etc/sudoers.d/admin
+sudo chmod 0440 /etc/sudoers.d/admin
 
 
 # 4. SSH key for admin

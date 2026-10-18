@@ -6,7 +6,7 @@ cd ~     # always start from your home folder
 # Your public key from the Mac (cat ~/.ssh/gcp_dressing.pub)
 PUBKEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMyUHkkOOGRSZtSjknS2zA4lexg0DXPCLgV6HnnpnHiw raimbekq75"
 
-id admin &>/dev/null sudo  useradd --create-home --shell /bin/bash admin
+id admin &>/dev/null || sudo  useradd --create-home --shell /bin/bash admin
 id frontend &>/dev/null || sudo useradd --create-home --shell /bin/bash frontend
 id backend  &>/dev/null || sudo useradd --create-home --shell /bin/bash backend
 
